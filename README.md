@@ -1,9 +1,9 @@
 # TEENA
-================================================================================================
+
 This is the code development repository in the background of TEENA web sever (https://sun-lab.yzu.edu.cn/TEENA/analysis/).  
 
 # Building TEENA  
-================================================================================================
+
 From a fresh install of CentOS, the following steps should provide all the required dependencies.  
 ------------------------------------------------------------------------------------------------
 yum install wget -y  
@@ -92,7 +92,7 @@ python -m pip install seaborn
 
   
 # Usage  
-================================================================================================
+
 TEENA has 12 optional arguments:  
 
   -q	The query bed file you want to analyze. Your query bed file only needs to include the chromosome name and its starting and ending positions in three columns(required=True).  
@@ -119,16 +119,14 @@ TEENA has 12 optional arguments:
   
   -rp	Choose whether to remove the promoter regions(required=False, default='True').  
   
-
-
-# Example  
-================================================================================================
+Example  
+------------------------------------------------------------------------------------------------
 python teena.py -q GATA3_hg38.bed -d hg38.repbase.bed -ch hg38.chrom.sizes -fa hg38.fa -a Homo_sapiens.GRCh38.110.gtf -o test1
 
 
   
 # Citing  
-================================================================================================
+
 Please cite this paper when using TEENA for your publications.  
 
 Yuzhuo Li, Renzhe Lyu, Shuai Chen, Yejun Wang, Ming-an Sun. TEENA: an integrated web server for transposable element enrichment analysis in various model and non-model organisms. 2024, Submitted.  
