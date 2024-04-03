@@ -72,6 +72,7 @@ PATH=/usr/local/python27/bin:/usr/local/python38/bin:$PATH
 export PATH  
 
 source /etc/profile  
+
 Some dependency packages required for TEENA operation.  
 ------------------------------------------------------------------------------------------------
 python -m pip install --upgrade pip  
