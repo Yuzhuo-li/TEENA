@@ -1,10 +1,11 @@
 # TEENA
+================================================================================================
 This is the code development repository in the background of TEENA web sever (https://sun-lab.yzu.edu.cn/TEENA/analysis/).  
 
 # Building TEENA  
-
+================================================================================================
 From a fresh install of CentOS, the following steps should provide all the required dependencies.  
-
+------------------------------------------------------------------------------------------------
 yum install wget -y  
 
 wget https://repo.anaconda.com/archive/Anaconda3-2023.09-0-Linux-x86_64.sh  
@@ -20,7 +21,7 @@ export PATH=$PATH:`pwd`
 source ~/.bashrc  
 
 The first set of tests require bedtools and homer to be in your path.  
-
+------------------------------------------------------------------------------------------------
 conda install -c bioconda bedtools -y  
 
 conda install -c bioconda homer -y  
@@ -36,7 +37,7 @@ cd homer
 
 
 Taking the human reference genome as an example:  
-
+------------------------------------------------------------------------------------------------
 perl configureHomer.pl -install hg38  
 
 If it is custom HOMER data, you need to refer to the FASTA and GTF files of the genome, and use the loadGenome.pl command to define HOMER  
@@ -47,7 +48,7 @@ For more details about HOMER, please refer to the help page on the website: http
 
 
 It is recommended to have a version of Python above 3.8 to facilitate drawing.  
-
+------------------------------------------------------------------------------------------------
 wget https://www.python.org/ftp/python/3.8.6/Python-3.8.6.tgz  
 
 tar -zxvf Python-3.8.6.tgz  
@@ -72,7 +73,7 @@ export PATH
 
 source /etc/profile  
 Some dependency packages required for TEENA operation.  
-
+------------------------------------------------------------------------------------------------
 python -m pip install --upgrade pip  
 
 python -m pip install pandas  
@@ -91,6 +92,7 @@ python -m pip install seaborn
 
   
 # Usage  
+================================================================================================
 TEENA has 12 optional arguments:  
 
   -q	The query bed file you want to analyze. Your query bed file only needs to include the chromosome name and its starting and ending positions in three columns(required=True).  
@@ -120,13 +122,13 @@ TEENA has 12 optional arguments:
 
 
 # Example  
-
+================================================================================================
 python teena.py -q GATA3_hg38.bed -d hg38.repbase.bed -ch hg38.chrom.sizes -fa hg38.fa -a Homo_sapiens.GRCh38.110.gtf -o test1
 
 
   
 # Citing  
-
+================================================================================================
 Please cite this paper when using TEENA for your publications.  
 
 Yuzhuo Li, Renzhe Lyu, Shuai Chen, Yejun Wang, Ming-an Sun. TEENA: an integrated web server for transposable element enrichment analysis in various model and non-model organisms. 2024, Submitted.  
