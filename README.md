@@ -149,7 +149,7 @@ For questions and discussion about TEENA please visit/join the mailing list:
   
 # Citing  
 
-Please cite this paper when using TEENA for your publications.  
+Please cite this paper when using TEENA for your publications:  
 
 *Yuzhuo Li, Renzhe Lyu, Shuai Chen, Yejun Wang, Ming-an Sun. TEENA: an integrated web server for transposable element enrichment analysis in various model and non-model organisms. 2024, Submitted.*  
 
