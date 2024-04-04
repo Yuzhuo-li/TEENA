@@ -22,6 +22,14 @@ vim ~/.bashrc
 export PATH=$PATH:`pwd`   
 
 source ~/.bashrc
+
+wget https://github.com/bedops/bedops/releases/download/v2.4.41/bedops_linux_x86_64-v2.4.41.tar.bz2
+
+tar jxvf bedops_linux_x86_64-v2.4.41.tar.bz2
+
+export PATH=$PATH:`pwd`   
+
+source ~/.bashrc
 ```
 
 #### The first set of tests require bedtools and homer to be in your path.  
