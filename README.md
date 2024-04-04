@@ -1,4 +1,5 @@
 # TEENA
+![Static Badge](https://img.shields.io/badge/build-passing-brightgreen)  
 
 This is the code development repository in the background of TEENA web sever：  
 `https://sun-lab.yzu.edu.cn/TEENA/analysis/`
@@ -9,23 +10,17 @@ This is the code development repository in the background of TEENA web sever：
 ------------------------------------------------------------------------------------------------  
 ```
 yum install wget -y
-```
-```
+
 wget https://repo.anaconda.com/archive/Anaconda3-2023.09-0-Linux-x86_64.sh
-```
-```
+
 chmod +x Anaconda3-2023.09-0-Linux-x86_64.sh
-```
-```
+
 bash Anaconda3-2023.09-0-Linux-x86_64.sh
-```
-```
+
 vim ~/.bashrc  
-```
-```
+
 export PATH=$PATH:`pwd`   
-```
-```
+
 source ~/.bashrc
 ```
 
@@ -33,17 +28,13 @@ source ~/.bashrc
 ------------------------------------------------------------------------------------------------
 ```
 conda install -c bioconda bedtools -y
-```
-```
+
 conda install -c bioconda homer -y  
-```
-```
+
 vim ~/.bashrc  
-```
-```
+
 export PATH=$PATH:`pwd`   
-```
-```
+
 source ~/.bashrc  
 ```
 
@@ -51,55 +42,45 @@ source ~/.bashrc
 ------------------------------------------------------------------------------------------------
 ```
 cd homer
-```
-```
+
 perl configureHomer.pl -install hg38  
 ```
-##### If it is custom HOMER data, you need to refer to the FASTA and GTF files of the genome, and use the loadGenome.pl command to define HOMER  
+
+#### If it is custom HOMER data, you need to refer to the FASTA and GTF files of the genome, and use the loadGenome.pl command to define HOMER  
 
 ```
 loadGenome.pl -gtf test.gtf -name test -fasta test.fa -org null
 ```
-
-#####For more details about HOMER, please refer to the help page on the website: `http://homer.ucsd.edu/homer/introduction/update.html`
+  
+#### For more details about HOMER, please refer to the help page on the website: 
+`http://homer.ucsd.edu/homer/introduction/update.html`
 
 
 #### It is recommended to have a version of Python above 3.8 to facilitate drawing.  
 ------------------------------------------------------------------------------------------------
 ```
 wget https://www.python.org/ftp/python/3.8.6/Python-3.8.6.tgz
-```
-```
+
 tar -zxvf Python-3.8.6.tgz
-```
-```
+
 yum -y install zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel tk-devel gcc make  
-```
-```
+
 cd Python-3.8.6/  
-```
-```
+
 ./configure --prefix=/usr/local/python38  
-```
-```
+
 make && make install  
-```
-```
+
 ln -s /usr/local/python38 /usr/local/bin/python3  
-```
-```
+
 ls -l /usr/local/bin/  
-```
-```
+
 vim /etc/profile  
-```
-```
+
 PATH=/usr/local/python27/bin:/usr/local/python38/bin:$PATH  
-```
-```
+
 export PATH  
-```
-```
+
 source /etc/profile
 ```
 
@@ -108,23 +89,17 @@ source /etc/profile
 ------------------------------------------------------------------------------------------------
 ```
 python -m pip install --upgrade pip  
-```
-```
+
 python -m pip install pandas  
-```
-```
+
 python -m pip install matplotlib  
-```
-```
+
 python -m pip install Bio  
-```
-```
+
 python -m pip install scipy  
-```
-```
+
 python -m pip install openpyxl  
-```
-```
+
 python -m pip install seaborn  
 ```
 
