@@ -1,4 +1,5 @@
 #!/bin/sh
+# The prerequisite for the successful execution of this command is the installation of bedops.
 gunzip *.gz && mv ./hg38.fa.out hg38.repbase.txt;
 
 for i in *.repbase.txt; do
