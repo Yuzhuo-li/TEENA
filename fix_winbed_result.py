@@ -4,7 +4,7 @@
 # Datetime:2023-11-23
 # Software: TEENA: determine the enrichment of TE family within given genomic intervals using Fisher's Exact Test
 # Version: 1.1 
-# Update 2023-12-14:We have preprocessed TE-derived-peak with string operations to facilitate annotatePeaks.pl of homer
+# Update 2023-12-14: we have preprocessed TE-derived-peak with string operations to facilitate annotatePeaks.pl of homer
 
 def fix_winbed_content(file_name, query_prefix):
     file = open(file_name, 'r')
