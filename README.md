@@ -7,7 +7,6 @@ This is the code development repository in the background of TEENA web sever (ht
 From a fresh install of CentOS, the following steps should provide all the required dependencies.  
 ------------------------------------------------------------------------------------------------  
 ```
-
 yum install wget -y  
 
 wget https://repo.anaconda.com/archive/Anaconda3-2023.09-0-Linux-x86_64.sh  
@@ -26,7 +25,6 @@ source ~/.bashrc
 The first set of tests require bedtools and homer to be in your path.  
 ------------------------------------------------------------------------------------------------
 ```
-
 conda install -c bioconda bedtools -y  
 
 conda install -c bioconda homer -y  
@@ -43,7 +41,6 @@ cd homer
 Taking the human reference genome as an example:  
 ------------------------------------------------------------------------------------------------
 ```
-
 perl configureHomer.pl -install hg38  
 
 If it is custom HOMER data, you need to refer to the FASTA and GTF files of the genome, and use the loadGenome.pl command to define HOMER  
@@ -86,7 +83,6 @@ source /etc/profile
 Some dependency packages required for TEENA operation.  
 ------------------------------------------------------------------------------------------------
 ```
-
 python -m pip install --upgrade pip  
 
 python -m pip install pandas  
@@ -109,7 +105,6 @@ python -m pip install seaborn
 
 TEENA has 12 optional arguments:  
 ```
-
   -q	The query bed file you want to analyze. Your query bed file only needs to include the chromosome name and its starting and ending positions in three columns(required=True).  
 
   -d 	The repbase annotation bed file we have already downloaded from UCSC, the first three columns are the same as the query file, but the 4th column contains the TE family names(required=True).  
@@ -138,7 +133,6 @@ TEENA has 12 optional arguments:
 Example  
 ------------------------------------------------------------------------------------------------
 ```
-
 python teena.py -q GATA3_hg38.bed -d hg38.repbase.bed -ch hg38.chrom.sizes -fa hg38.fa -a Homo_sapiens.GRCh38.110.gtf -o test1
 ```
 
