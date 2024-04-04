@@ -5,7 +5,9 @@ This is the code development repository in the background of TEENA web sever (ht
 # Building TEENA  
 
 From a fresh install of CentOS, the following steps should provide all the required dependencies.  
-------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------  
+```
+
 yum install wget -y  
 
 wget https://repo.anaconda.com/archive/Anaconda3-2023.09-0-Linux-x86_64.sh  
@@ -18,10 +20,13 @@ vim ~/.bashrc
 
 export PATH=$PATH:`pwd`   
 
-source ~/.bashrc  
+source ~/.bashrc
+```
 
 The first set of tests require bedtools and homer to be in your path.  
 ------------------------------------------------------------------------------------------------
+```
+
 conda install -c bioconda bedtools -y  
 
 conda install -c bioconda homer -y  
@@ -33,22 +38,25 @@ export PATH=$PATH:`pwd`
 source ~/.bashrc  
 
 cd homer  
-
-
+```
 
 Taking the human reference genome as an example:  
 ------------------------------------------------------------------------------------------------
+```
+
 perl configureHomer.pl -install hg38  
 
 If it is custom HOMER data, you need to refer to the FASTA and GTF files of the genome, and use the loadGenome.pl command to define HOMER  
 
-loadGenome.pl -gtf test.gtf -name test -fasta test.fa -org null  
+loadGenome.pl -gtf test.gtf -name test -fasta test.fa -org null
+```
 
 For more details about HOMER, please refer to the help page on the website: http://homer.ucsd.edu/homer/introduction/update.html  
 
 
 It is recommended to have a version of Python above 3.8 to facilitate drawing.  
 ------------------------------------------------------------------------------------------------
+```
 wget https://www.python.org/ftp/python/3.8.6/Python-3.8.6.tgz  
 
 tar -zxvf Python-3.8.6.tgz  
@@ -71,10 +79,14 @@ PATH=/usr/local/python27/bin:/usr/local/python38/bin:$PATH
 
 export PATH  
 
-source /etc/profile  
+source /etc/profile
+```
+
 
 Some dependency packages required for TEENA operation.  
 ------------------------------------------------------------------------------------------------
+```
+
 python -m pip install --upgrade pip  
 
 python -m pip install pandas  
@@ -88,6 +100,7 @@ python -m pip install scipy
 python -m pip install openpyxl  
 
 python -m pip install seaborn  
+```
 
 
 
@@ -95,6 +108,7 @@ python -m pip install seaborn
 # Usage  
 
 TEENA has 12 optional arguments:  
+```
 
   -q	The query bed file you want to analyze. Your query bed file only needs to include the chromosome name and its starting and ending positions in three columns(required=True).  
 
@@ -118,11 +132,15 @@ TEENA has 12 optional arguments:
   
   -rn	Choose whether to remove the gaps from genome sequence(required=False, default='True').  
   
-  -rp	Choose whether to remove the promoter regions(required=False, default='True').  
-  
+  -rp	Choose whether to remove the promoter regions(required=False, default='True').
+```
+
 Example  
 ------------------------------------------------------------------------------------------------
+```
+
 python teena.py -q GATA3_hg38.bed -d hg38.repbase.bed -ch hg38.chrom.sizes -fa hg38.fa -a Homo_sapiens.GRCh38.110.gtf -o test1
+```
 
 
   
