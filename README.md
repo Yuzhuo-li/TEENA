@@ -145,7 +145,7 @@ python teena.py [options]
 #### Example  
 ------------------------------------------------------------------------------------------------
 ```
-python teena.py -q GATA3_hg38.bed -d hg38.repbase.bed -ch hg38.chrom.sizes -fa hg38.fa -a Homo_sapiens.GRCh38.110.gtf -o test1
+python teena.py -q GATA3_hg38.bed -d hg38.repbase.bed -ch hg38.chrom.sizes -fa hg38.fa -a Homo_sapiens.GRCh38.110.gtf -o test
 ```
 For questions and discussion about TEENA please visit/join the mailing list: 
 `https://sun-lab.yzu.edu.cn/TEENA/help/`
