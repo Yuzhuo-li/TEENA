@@ -126,7 +126,7 @@ Exmple\n
     bed_n_file = args.nbed
     if not bed_n_file:
         if args.fasta:
-            print('The gap file is generated through the process.py script')
+            print('The gap file is generated through the teena.py script')
             process_origin_file(args.fasta, db_prefix)
             bed_n_file = f'{db_prefix}_N.bed'
         else:
