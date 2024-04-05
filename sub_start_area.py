@@ -7,7 +7,7 @@
 # Update 2023-12-09: set a function to extract the promoter regions from genome annotation file (like gtf file)
 
 def get_sub_result(fasta_file, sub_area_file, usize: int, dsize: int):
-    print('Start extracting promoter regions!')
+    # print('Start extracting promoter regions!')
     # output_file = "GRCh38.promoter.bed"
     output_file = sub_area_file
     with open(fasta_file, "r") as infile, open(output_file, "w") as outfile:
@@ -27,4 +27,4 @@ def get_sub_result(fasta_file, sub_area_file, usize: int, dsize: int):
                     outfile.write(f"{parts[0]}\t{start}\t{end}\t{parts[13]}\t{parts[9]}\t{parts[6]}\n")
                 else:
                     outfile.write(f"chr{parts[0]}\t{start}\t{end}\t{parts[13]}\t{parts[9]}\t{parts[6]}\n")
-    print('Extracting the promoter regions have been completed!')
+    # print('Extracting the promoter regions have been completed!')
