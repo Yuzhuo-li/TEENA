@@ -1,12 +1,12 @@
 # TEENA
 ![Static Badge](https://img.shields.io/badge/build-passing-brightgreen)  
 
-This is the code development repository in the background of TEENA web sever：  
-`https://sun-lab.yzu.edu.cn/TEENA/analysis/`
+This is the code development repository of TEENA web sever：  
+`https://sun-lab.yzu.edu.cn/TEENA/`
 
 # Building TEENA  
 
-#### From a fresh install of CentOS, the following steps should provide all the required dependencies.  
+#### TEENA can run in various Linux, here we showed how to install teena from CentOS, the following steps should provide all the required dependencies.  
 ------------------------------------------------------------------------------------------------  
 ```
 yum install wget -y
@@ -56,7 +56,8 @@ perl configureHomer.pl -install hg38
 loadGenome.pl -gtf test.gtf -name test -fasta test.fa -org null
 ```
   
-#### For more details about HOMER, please refer to the help page on the website: 
+#### For more details about HOMER, please refer to the help page on the website:  
+
 `http://homer.ucsd.edu/homer/introduction/update.html`
 
 
