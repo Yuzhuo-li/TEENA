@@ -136,7 +136,7 @@ Exmple\n
     ## Extract the promoter regions (The promoter region refers to the upstream and downstream 500bp of the transcription start site, which is removed by default. This parameter can choose to remove more or fewer promoter regions)
     _, gtf_fixed = fix_file_content(args.gtf)
 
-    print('Extract the promoter regions!')
+    # print('Extract the promoter regions!')
 
     get_sub_result(gtf_fixed, f'{db_prefix}.promoter.bed', args.usize, args.dsize)
    
