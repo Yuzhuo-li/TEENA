@@ -1,3 +1,6 @@
+# The following list is genomes that we have successfully installed in Homer, for reference only.
+# In your directory, you need to install the genomes and redirect it to species.txt before annotating the species with homer that you are interested in.
+# species.txt and running scripts should in the same directory.
 ce11
 dm3
 dm6
