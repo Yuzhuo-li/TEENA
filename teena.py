@@ -242,7 +242,7 @@ Exmple\n
         # annotation_list = convert_homer_result_to_excel('demo_output_homer.txt', 'demo_output')
         # annotation_pds = convert_homer_result_to_excel(homer_result_txt_file, out_put_file_name.split('.')[0])
         # Update 2024-01-17: Read species files which named species.txt
-        species_reader = open('/home/lvrenzhe/TEENA/myvenv/Scripts2/species.txt', 'r')
+        species_reader = open('species.txt', 'r')
         line_striped = []
         lines = species_reader.readlines()
         for line in lines:
