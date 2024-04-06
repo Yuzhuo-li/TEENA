@@ -50,13 +50,13 @@ cd homer
 perl configureHomer.pl -install hg38  
 ```
 
-#### If it is custom HOMER data, you need to refer to the FASTA and GTF files of the genome, and use the loadGenome.pl command to define HOMER  
+#### Loading custom genomes, you need to refer to the FASTA and GTF files of the genome, and use the loadGenome.pl command to define homer.    
 
 ```
 loadGenome.pl -gtf test.gtf -name test -fasta test.fa -org null
 ```
   
-#### For more details about HOMER, please refer to the help page on the website:  
+#### For more details about homer, please refer to the help page on the website:  
 
 `http://homer.ucsd.edu/homer/introduction/update.html`
 
