@@ -8,7 +8,8 @@ for i in *.repbase.txt; do
         echo "Skip: $i"
     else
         echo "Processing $i ..."
-        rmsk2bed <$i >${j}.full.bed
+ # To prevent the existence of bugs, it is recommended to use anabsolute path of convert2bed.       
+        convert2bed <$i >${j}.full.bed
         cat ${j}.full.bed | awk '{print $1 "\t" $2 "\t" $3 "\t" $11 ":" $4 "\t"
 $5 "\t" $6}' >${j}.bed
     fi
