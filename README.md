@@ -176,15 +176,27 @@ python teena.py [options]
 #### Example  
 ------------------------------------------------------------------------------------------------
 ```
-cd TEENA-master
-
-chmod +x *
-
 python ./teena.py -q GATA3_hg38.bed -d hg38.repbase.bed -ch hg38.chrom.sizes -fa hg38.fa -a Homo_sapiens.GRCh38.110.gtf -o test
 ```
 For questions and discussion about TEENA please visit/join the mailing list: 
 `https://sun-lab.yzu.edu.cn/TEENA/help/`
 
+
+#### Test  
+------------------------------------------------------------------------------------------------
+```
+cd TEENA-master
+
+cd test
+
+chmod +x *
+
+bash step1_datadownload.sh
+
+bash step2_fa.out2repbase.sh
+
+bash step3_runteena.sh
+```
   
 # Citing  
 
