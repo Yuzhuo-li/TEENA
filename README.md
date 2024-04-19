@@ -72,17 +72,46 @@ yum -y install zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel r
 
 cd Python-3.8.6/  
 
-./configure --prefix=/usr/local/python38  
+./configure --prefix=`your path of Python3.8`  (for example: /home/download/python/python3.8/)
 
-make && make install  
+make && make install
+```
 
-ln -s /usr/local/python38 /usr/local/bin/python3  
+#### To test whether python3.8 installation was successful
+------------------------------------------------------------------------------------------------
+```
+cd /home/download/python/python3.8/bin
 
-ls -l /usr/local/bin/   
+ls
+
+./python3.8
+
+quit()
+```
+
+#### To establish a soft link for Python 3.8, first check the situation in the/usr/bin/directory before the establishment:
+------------------------------------------------------------------------------------------------
+```
+ln -s /home/download/python/python3.8/bin/python3.8 /usr/bin/python3
+
+ln -s /home/download/python/python3.8/bin/pip3.8 /usr/bin/pip3
+
+ll /usr/local/bin
+
+```
+
+#### Check for availability:
+------------------------------------------------------------------------------------------------
+```
+python3
+
+quit()
+
+vi ~/.bashrc
 
 export PATH=$PATH:`pwd`  
 
-source /etc/profile
+source ~/.bashrc
 ```
 
 
