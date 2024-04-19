@@ -31,13 +31,15 @@ conda install -c bioconda bedtools -y
 ```
 
 ```
-wget wget https://github.com/bedops/bedops/archive/refs/heads/master.zip
+mkdir bedops
 
-unzip master.zip
+wget https://github.com/bedops/bedops/releases/download/v2.4.41/bedops_linux_x86_64-v2.4.41.tar.bz2
 
-cd bedops-master
+tar jxvf bedops_linux_x86_64-v2.4.41.tar.bz2
 
-make && make install
+cd /bedops/bin
+
+./bedops
 
 vim ~/.bashrc  
 
@@ -45,6 +47,8 @@ export PATH=$PATH:`pwd`
 
 source ~/.bashrc  
 ```
+If there are any issues with your Bedops installation, please refer to the installation guide on the official website:  
+`https://bedops.readthedocs.io/en/latest/content/installation.html`
 
 #### It is recommended to have a version of Python above 3.8 to facilitate drawing.  
 ------------------------------------------------------------------------------------------------
