@@ -64,6 +64,16 @@ loadGenome.pl -gtf test.gtf -name test -fasta test.fa -org null
 #### It is recommended to have a version of Python above 3.8 to facilitate drawing.  
 ------------------------------------------------------------------------------------------------
 ```
+conda search "^python$"
+
+conda create --name py38 python=3.8 -c conda-forge -y
+
+conda activate py38
+
+```
+#### Python3.8 can also be customized for installation.
+------------------------------------------------------------------------------------------------
+```
 wget https://www.python.org/ftp/python/3.8.6/Python-3.8.6.tgz
 
 tar -zxvf Python-3.8.6.tgz
@@ -77,7 +87,7 @@ cd Python-3.8.6/
 make && make install
 ```
 
-#### To test whether python3.8 installation was successful
+#### To test whether python3.8 installation was successful.
 ------------------------------------------------------------------------------------------------
 ```
 cd /home/download/python/python3.8/bin
@@ -113,7 +123,6 @@ export PATH=$PATH:`pwd`
 
 source ~/.bashrc
 ```
-
 
 #### Some dependency packages required for TEENA operation.  
 ------------------------------------------------------------------------------------------------
