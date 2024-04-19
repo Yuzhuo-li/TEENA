@@ -24,16 +24,20 @@ export PATH=$PATH:`pwd`
 source ~/.bashrc
 ```
 
-#### The first set of tests require bedops, bedtools and homer to be in your path.  
+#### The first set of tests require bedops and bedtools to be in your path.  
 ------------------------------------------------------------------------------------------------
 ```
-wget https://github.com/bedops/bedops/releases/download/v2.4.41/bedops_linux_x86_64-v2.4.41.tar.bz2
-
-tar jxvf bedops_linux_x86_64-v2.4.41.tar.bz2
-
 conda install -c bioconda bedtools -y
+```
 
-conda install -c bioconda homer -y  
+```
+wget wget https://github.com/bedops/bedops/archive/refs/heads/master.zip
+
+unzip master.zip
+
+cd bedops-master
+
+make && make install
 
 vim ~/.bashrc  
 
@@ -41,25 +45,6 @@ export PATH=$PATH:`pwd`
 
 source ~/.bashrc  
 ```
-
-#### Taking the human reference genome as an example:  
-------------------------------------------------------------------------------------------------
-```
-cd homer
-
-perl configureHomer.pl -install hg38  
-```
-
-#### Loading custom genomes, you need to refer to the FASTA and GTF files of the genome, and use the loadGenome.pl command to define homer.    
-
-```
-loadGenome.pl -gtf test.gtf -name test -fasta test.fa -org null
-```
-  
-#### For more details about homer, please refer to the help page on the website:  
-
-`http://homer.ucsd.edu/homer/introduction/update.html`
-
 
 #### It is recommended to have a version of Python above 3.8 to facilitate drawing.  
 ------------------------------------------------------------------------------------------------
