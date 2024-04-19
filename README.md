@@ -176,6 +176,10 @@ python teena.py [options]
 #### Example  
 ------------------------------------------------------------------------------------------------
 ```
+cd TEENA-master
+
+chmod +x *
+
 python ./teena.py -q GATA3_hg38.bed -d hg38.repbase.bed -ch hg38.chrom.sizes -fa hg38.fa -a Homo_sapiens.GRCh38.110.gtf -o test
 ```
 For questions and discussion about TEENA please visit/join the mailing list: 
