@@ -78,13 +78,9 @@ make && make install
 
 ln -s /usr/local/python38 /usr/local/bin/python3  
 
-ls -l /usr/local/bin/  
+ls -l /usr/local/bin/   
 
-vim /etc/profile  
-
-PATH=/usr/local/python27/bin:/usr/local/python38/bin:$PATH  
-
-export PATH  
+export PATH=$PATH:`pwd`  
 
 source /etc/profile
 ```
