@@ -41,13 +41,14 @@ cd /bedops/bin
 
 ./rmsk2bed
 
+# To prevent the existence of bugs, it is recommended to use anabsolute path of rmsk2bed (for example: /home/download/bedops/bin/rmsk2bed) 
+
 vim ~/.bashrc  
 
 export PATH=$PATH:`pwd`   
 
 source ~/.bashrc
 
-To prevent the existence of bugs, it is recommended to use anabsolute path of rmsk2bed (for example: /home/download/bedops/bin/rmsk2bed) 
 ``` 
 
 If there are any issues with your Bedops installation, please refer to the installation guide on the official website:  
