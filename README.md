@@ -39,7 +39,7 @@ tar jxvf bedops_linux_x86_64-v2.4.41.tar.bz2
 
 cd /bedops/bin
 
-./bedops
+./rmsk2bed
 
 vim ~/.bashrc  
 
