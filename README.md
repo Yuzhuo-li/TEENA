@@ -30,8 +30,19 @@ source ~/.bashrc
 conda install -c bioconda bedtools -y
 
 conda install -c bioconda samtools openssl=1.0
+```
 
-conda install gffread
+```
+wget https://github.com/gpertea/gffread/archive/refs/heads/master.zip
+
+unzip gffread-master.zip
+
+cd gffread-master
+
+make release
+
+./gffread
+
 ```
 
 ```
