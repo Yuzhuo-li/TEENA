@@ -1,11 +1,12 @@
 #!/bin/bash
 # The prerequisite for the successful execution of this command is the installation of gffread.
+# To prevent the existence of bugs, it is recommended to use anabsolute path of gffread(for example: /home/download/gffread-master/gffread) 
 
 for gff_file in *.gff3; do
     
     gtf_file="${gff_file%.gff}.gtf"
     
-    gffread "$gff_file" -T -o "$gtf_file"
+    gffread "$gff_file" -T -o "$gtf_file" 
 done
 
 # Rename and remove
