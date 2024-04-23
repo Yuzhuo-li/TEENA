@@ -55,7 +55,7 @@ cd /bedops/bin
 
 ./rmsk2bed
 
-# To prevent the existence of bugs, it is recommended to use anabsolute path of rmsk2bed (for example: /home/download/bedops/bin/rmsk2bed) 
+# To prevent the existence of bugs, it is recommended to use anabsolute path of gffread and rmsk2bed (for example: /home/download/bedops/bin/rmsk2bed) 
 
 vim ~/.bashrc  
 
