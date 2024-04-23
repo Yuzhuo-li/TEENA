@@ -5,7 +5,7 @@
 for gff_file in *.gff3; do
     
     gtf_file="${gff_file%.gff}.gtf"
-    
+# for example: /home/download/gffread-master/gffread "$gff_file" -T -o "$gtf_file" 
     gffread "$gff_file" -T -o "$gtf_file" 
 done
 
