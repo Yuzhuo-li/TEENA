@@ -24,7 +24,7 @@ export PATH=$PATH:`pwd`
 source ~/.bashrc
 ```
 
-#### The first set of tests require bedops, bedtools and samtools to be in your path.  
+#### The first set of tests require bedops, bedtools, samtools and gffread to be in your path.  
 ------------------------------------------------------------------------------------------------
 ```
 conda install -c bioconda bedtools -y
