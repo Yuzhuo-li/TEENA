@@ -42,7 +42,6 @@ cd gffread-master
 make release
 
 ./gffread
-
 ```
 
 ```
