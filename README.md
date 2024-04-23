@@ -179,12 +179,14 @@ For questions and discussion about TEENA please visit/join the mailing list:
 `https://sun-lab.yzu.edu.cn/TEENA/help/`
 
 
-#### Test  
+#### Test for animals  
 ------------------------------------------------------------------------------------------------
 ```
 cd TEENA-master
 
-cd test
+chmod +x *
+
+cd ./test/animals/
 
 chmod +x *
 
@@ -193,6 +195,31 @@ bash step1_datadownload.sh
 bash step2_fa.out2repbase.sh
 
 bash step3_runteena.sh
+```
+
+#### Test for plants  
+------------------------------------------------------------------------------------------------  
+```
+cd TEENA-master
+
+chmod +x *
+
+cd ./test/plants/
+
+chmod +x *
+
+bash step1_datadownload.sh
+
+bash step2-1_make_TE_file.sh
+
+bash step2-2_makeTEfile_attention.sh  irgsp1.TE.bed
+
+bash step3_create_chrom_sizes.sh  Oryza_sativa.IRGSP-1.0.dna.toplevel.fa
+
+bash step4_gff2gtf.sh
+
+bash step5_runteena.sh
+ 
 ```
   
 # Citing  
