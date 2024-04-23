@@ -68,7 +68,7 @@ conda create --name py38 python=3.8 -c conda-forge -y
 conda activate py38
 
 ```
-#### Python3.8 can also be customized for installation.
+#### Python3.8 can also be customized for installation:
 ------------------------------------------------------------------------------------------------
 ```
 wget https://www.python.org/ftp/python/3.8.6/Python-3.8.6.tgz
@@ -179,7 +179,7 @@ For questions and discussion about TEENA please visit/join the mailing list:
 `https://sun-lab.yzu.edu.cn/TEENA/help/`
 
 
-#### Test for animals  
+#### Test for animals:
 ------------------------------------------------------------------------------------------------
 ```
 cd TEENA-master
@@ -197,7 +197,7 @@ bash step2_fa.out2repbase.sh
 bash step3_runteena.sh
 ```
 
-#### Test for plants  
+#### Test for plants:
 ------------------------------------------------------------------------------------------------  
 ```
 cd TEENA-master
