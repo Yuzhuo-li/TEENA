@@ -62,11 +62,11 @@ vim ~/.bashrc
 export PATH=$PATH:`pwd`   
 
 source ~/.bashrc
-
 ``` 
 
-If there are any issues with your Bedops installation, please refer to the installation guide on the official website:  
-`https://bedops.readthedocs.io/en/latest/content/installation.html`
+If there are any issues with your Bedops and gffread installation, please refer to the installation guide on the official website:  
+`https://bedops.readthedocs.io/en/latest/content/installation.html`  
+`https://github.com/gpertea/gffread`
 
 #### It is recommended to have a version of Python above 3.8 to facilitate drawing.  
 ------------------------------------------------------------------------------------------------
@@ -76,7 +76,6 @@ conda search "^python$"
 conda create --name py38 python=3.8 -c conda-forge -y
 
 conda activate py38
-
 ```
 #### Python3.8 can also be customized for installation:
 ------------------------------------------------------------------------------------------------
@@ -114,7 +113,6 @@ ln -s /home/download/python/python3.8/bin/python3.8 /usr/bin/python3
 ln -s /home/download/python/python3.8/bin/pip3.8 /usr/bin/pip3
 
 ll /usr/local/bin
-
 ```
 
 #### Check for availability:
@@ -229,7 +227,6 @@ bash step3_create_chrom_sizes.sh  Oryza_sativa.IRGSP-1.0.dna.toplevel.fa
 bash step4_gff2gtf.sh
 
 bash step5_runteena.sh
- 
 ```
   
 # Citing  
