@@ -1,5 +1,5 @@
 # TEENA
-![Static Badge](https://img.shields.io/badge/build-passing-brightgreen)  ![Static Badge](https://img.shields.io/badge/Python-3.8%2B-cornflowerblue)
+![Static Badge](https://img.shields.io/badge/build-passing-brightgreen)  ![Static Badge](https://img.shields.io/badge/Python-3.8%2B-cornflowerblue)  (https://img.shields.io/badge/TEENA-@websever-sandybrown.svg)]](https://sun-lab.yzu.edu.cn/TEENA/)
 
 This is the code development repository of TEENA web sever：  
 `https://sun-lab.yzu.edu.cn/TEENA/`
