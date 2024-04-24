@@ -1,7 +1,9 @@
-# TEENA
-![Static Badge](https://img.shields.io/badge/build-passing-brightgreen)  ![Static Badge](https://img.shields.io/badge/Python-3.8%2B-cornflowerblue)  <a href="https://sun-lab.yzu.edu.cn/TEENA/"> <img src="https://img.shields.io/badge/TEENA-@websever-sandybrown.svg" alt="TEENA"> </a>
+# TEENA  
+**This is the code development repository of TEENA web sever: `https://sun-lab.yzu.edu.cn/TEENA/`**
+![Static Badge](https://img.shields.io/badge/build-passing-brightgreen)  ![Static Badge](https://img.shields.io/badge/Python-3.8%2B-cornflowerblue)  <a href="https://sun-lab.yzu.edu.cn/TEENA/"> <img src="https://img.shields.io/badge/TEENA-@websever-sandybrown.svg" alt="TEENA"> </a>  
+**For questions and discussion about TEENA please visit/join the mailing list: `https://sun-lab.yzu.edu.cn/TEENA/help/`**
+**For any question about TEENA, please contact `DX120230210@stu.yzu.edu.cn`**
 
-This is the code development repository of TEENA web sever：`https://sun-lab.yzu.edu.cn/TEENA/`
 ----------------------------------------------------------------
 # Building TEENA  
 
@@ -32,7 +34,8 @@ gffread: `https://github.com/gpertea/gffread`
 
 bedops：`https://bedops.readthedocs.io/en/latest/content/installation.html`  
 
-Python3.8:`https://www.python.org/`
+Python3.8:`https://www.python.org/`  
+
 ----------------------------------------------------------------
 # Usage  
 
@@ -70,9 +73,6 @@ python teena.py [options]
 ```
 python ./teena.py -q GATA3_hg38.bed -d hg38.repbase.bed -ch hg38.chrom.sizes -fa hg38.fa -a Homo_sapiens.GRCh38.110.gtf -o test
 ```
-**For questions and discussion about TEENA please visit/join the mailing list: 
-`https://sun-lab.yzu.edu.cn/TEENA/help/`**
-
 
 ### Run tests for animals:  
 ------------------------------------------------------------------------------------------------
@@ -127,6 +127,3 @@ Please cite this paper when using TEENA for your publications:
 *Yuzhuo Li, Renzhe Lyu, Shuai Chen, Yejun Wang, Ming-an Sun. TEENA: an integrated web server for transposable element enrichment analysis in various model and non-model organisms. 2024, Submitted.*  
 
 See also `https://sun-lab.yzu.edu.cn/TEENA/cite/`  
-
-# Contact us
-For any question about TEENA, please contact `DX120230210@stu.yzu.edu.cn`
