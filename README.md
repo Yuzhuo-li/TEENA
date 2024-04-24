@@ -20,9 +20,7 @@ gffread(>0.12.8)
 
 convert2bed(>2.4.39) is in bedops(>2.4.41)  
 
-Python (>3.8), pandas(>2.0.3), numpy(>1.24.4), matplotlib(>3.7.5), Bio(>1.6.2), scipy(1.10.1), openpyxl(>3.1.2), seaborn(>0.13.2)and scipy(>=1.4.1) libraries.  
-
-Note that the current version no longer supports python 2
+Python (>3.8), pandas(>2.0.3), numpy(>1.24.4), matplotlib(>3.7.5), Bio(>1.6.2), scipy(1.10.1), openpyxl(>3.1.2), seaborn(>0.13.2) and scipy(>=1.4.1) libraries.  
 
 If there are any issues with your Bedops and gffread installation, please refer to the installation guide on the official website:  
 `https://bedops.readthedocs.io/en/latest/content/installation.html`  
