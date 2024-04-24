@@ -8,9 +8,7 @@ This is the code development repository of TEENA web sever：
 
 #### TEENA can run in various Linux, here we showed all the required dependencies from CentOS.  
 
-#### The first set of tests require bedops, bedtools, samtools and gffread to be in your path, you can install them by conda.  
-
-The TEENA pipeline requires the following dependencies:  
+#### The TEENA pipeline requires the following dependencies to be in your path:  
 
 bedtools(>2.30.0)  
 
@@ -22,9 +20,12 @@ convert2bed(>2.4.39) is in bedops(>2.4.41)
 
 Python (>3.8), pandas(>2.0.3), numpy(>1.24.4), matplotlib(>3.7.5), Bio(>1.6.2), scipy(1.10.1), openpyxl(>3.1.2), seaborn(>0.13.2) and scipy(>=1.4.1) libraries.  
 
-If there are any issues with your Bedops and gffread installation, please refer to the installation guide on the official website:  
+If there are any issues with installation, please refer to the installation guide on the official website:  
 `https://bedops.readthedocs.io/en/latest/content/installation.html`  
-`https://github.com/gpertea/gffread`
+`https://github.com/gpertea/gffread`  
+`https://bedtools.readthedocs.io/en/latest/content/installation.html`  
+`https://github.com/samtools/samtools`  
+`https://www.python.org/`
 
 # Usage  
 
