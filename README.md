@@ -124,7 +124,7 @@ bash step5_runteena.sh
 ```
 
 # Citing  
-
+------------------------------------------------------------------------------------------------  
 Please cite this paper when using TEENA for your publications:  
 
 *Yuzhuo Li, Renzhe Lyu, Shuai Chen, Yejun Wang, Ming-an Sun. TEENA: an integrated web server for transposable element enrichment analysis in various model and non-model organisms. 2024, Submitted.*  
