@@ -1,5 +1,5 @@
 # TEENA  
-**This is the code development repository of TEENA web sever.
+**This is the code development repository of TEENA web sever.**
 
 ![Static Badge](https://img.shields.io/badge/build-passing-brightgreen)  ![Static Badge](https://img.shields.io/badge/Python-3.8%2B-cornflowerblue)  <a href="https://sun-lab.yzu.edu.cn/TEENA/"> <img src="https://img.shields.io/badge/TEENA-@websever-sandybrown.svg" alt="TEENA"> </a>  
 
