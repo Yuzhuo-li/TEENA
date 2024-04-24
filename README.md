@@ -37,7 +37,7 @@ gffread: `https://github.com/gpertea/gffread`
 
 bedops：`https://bedops.readthedocs.io/en/latest/content/installation.html`  
 
-Python3.8:`https://www.python.org/`  
+Python3.8: `https://www.python.org/`  
 
 ----------------------------------------------------------------
 # Usage  
