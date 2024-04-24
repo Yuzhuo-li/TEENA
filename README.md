@@ -27,7 +27,7 @@
 #### **To install TEENA, be sure to have the appropriate rights and run.**  
 
 ----------------------------------------------------------------
-#### If there are any issues with installation, please refer to the installation guide on the official website:  
+#### If you have any issues with installation, please refer to the installation guide on their official website:  
 
 bedtools: `https://bedtools.readthedocs.io/en/latest/content/installation.html`  
 
