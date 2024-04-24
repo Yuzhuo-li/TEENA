@@ -132,8 +132,6 @@ source ~/.bashrc
 #### Some dependency packages required for TEENA operation.  
 ------------------------------------------------------------------------------------------------
 ```
-python -m pip install --upgrade pip  
-
 python -m pip install pandas  
 
 python -m pip install matplotlib  
@@ -187,7 +185,8 @@ For questions and discussion about TEENA please visit/join the mailing list:
 `https://sun-lab.yzu.edu.cn/TEENA/help/`
 
 
-#### Test for animals:
+#### Run tests for animals:  
+The first set of tests require bedops and bedtools to be in your path.
 ------------------------------------------------------------------------------------------------
 ```
 cd TEENA-master
@@ -205,7 +204,8 @@ bash step2_fa.out2repbase.sh
 bash step3_runteena.sh
 ```
 
-#### Test for plants:
+#### Run tests for plants:  
+The first set of tests require gffread, bedtools and samtools to be in your path.
 ------------------------------------------------------------------------------------------------  
 ```
 cd TEENA-master
@@ -228,11 +228,14 @@ bash step4_gff2gtf.sh
 
 bash step5_runteena.sh
 ```
-  
+
 # Citing  
 
 Please cite this paper when using TEENA for your publications:  
 
 *Yuzhuo Li, Renzhe Lyu, Shuai Chen, Yejun Wang, Ming-an Sun. TEENA: an integrated web server for transposable element enrichment analysis in various model and non-model organisms. 2024, Submitted.*  
 
-See also `https://sun-lab.yzu.edu.cn/TEENA/cite/`
+See also `https://sun-lab.yzu.edu.cn/TEENA/cite/`  
+
+# Contact us
+If you have any further questions, please feel free to contact `DX120230210@stu.yzu.edu.cn`.
