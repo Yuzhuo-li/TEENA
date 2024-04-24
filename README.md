@@ -22,7 +22,7 @@
 
 * convert2bed(>2.4.39) is in bedops(>2.4.41)  
 
-* Python (>3.8), pandas(>2.0.3), numpy(>1.24.4), matplotlib(>3.7.5), Bio(>1.6.2), scipy(1.10.1), openpyxl(>3.1.2), seaborn(>0.13.2) and scipy(>=1.4.1) libraries.
+* Python (>3.8): pandas(>2.0.3), numpy(>1.24.4), matplotlib(>3.7.5), Bio(>1.6.2), scipy(1.10.1), openpyxl(>3.1.2), seaborn(>0.13.2) and scipy(>=1.4.1) libraries.
 
 #### **To install TEENA, be sure to have the appropriate rights and run.**  
 
