@@ -1,32 +1,34 @@
 # TEENA
 ![Static Badge](https://img.shields.io/badge/build-passing-brightgreen)  ![Static Badge](https://img.shields.io/badge/Python-3.8%2B-cornflowerblue)  <a href="https://sun-lab.yzu.edu.cn/TEENA/"> <img src="https://img.shields.io/badge/TEENA-@websever-sandybrown.svg" alt="TEENA"> </a>
 
-
-This is the code development repository of TEENA web sever：  
-`https://sun-lab.yzu.edu.cn/TEENA/`
+This is the code development repository of TEENA web sever：`https://sun-lab.yzu.edu.cn/TEENA/`
 
 # Building TEENA  
 
-#### TEENA can run in various Linux, here we showed all the required dependencies from CentOS.  
+### TEENA can run in various Linux, here we showed all the required dependencies from CentOS.  
 
-#### The TEENA pipeline requires the following dependencies to be in your path:  
+### The TEENA pipeline requires the following dependencies to be in your path:  
 
-bedtools(>2.30.0)  
+* bedtools(>2.30.0)  
 
-samtools(>1.10)  
+* samtools(>1.10)  
 
-gffread(>0.12.8)  
+* gffread(>0.12.8)  
 
-convert2bed(>2.4.39) is in bedops(>2.4.41)  
+* convert2bed(>2.4.39) is in bedops(>2.4.41)  
 
-Python (>3.8), pandas(>2.0.3), numpy(>1.24.4), matplotlib(>3.7.5), Bio(>1.6.2), scipy(1.10.1), openpyxl(>3.1.2), seaborn(>0.13.2) and scipy(>=1.4.1) libraries.  
+* Python (>3.8), pandas(>2.0.3), numpy(>1.24.4), matplotlib(>3.7.5), Bio(>1.6.2), scipy(1.10.1), openpyxl(>3.1.2), seaborn(>0.13.2) and scipy(>=1.4.1) libraries.  
 
 If there are any issues with installation, please refer to the installation guide on the official website:  
-`https://bedops.readthedocs.io/en/latest/content/installation.html`  
-`https://github.com/gpertea/gffread`  
-`https://bedtools.readthedocs.io/en/latest/content/installation.html`  
-`https://github.com/samtools/samtools`  
-`https://www.python.org/`
+bedtools: `https://bedtools.readthedocs.io/en/latest/content/installation.html`  
+
+samtools: `https://github.com/samtools/samtools`  
+
+gffread: `https://github.com/gpertea/gffread`  
+
+bedops：`https://bedops.readthedocs.io/en/latest/content/installation.html`  
+
+Python3.8:`https://www.python.org/`
 
 # Usage  
 
@@ -59,7 +61,7 @@ python teena.py [options]
   -rp	Choose whether to remove the promoter regions(required=False, default='True').
 ```
 
-#### Example  
+### Example  
 ------------------------------------------------------------------------------------------------
 ```
 python ./teena.py -q GATA3_hg38.bed -d hg38.repbase.bed -ch hg38.chrom.sizes -fa hg38.fa -a Homo_sapiens.GRCh38.110.gtf -o test
@@ -68,9 +70,9 @@ For questions and discussion about TEENA please visit/join the mailing list:
 `https://sun-lab.yzu.edu.cn/TEENA/help/`
 
 
-#### Run tests for animals:  
-#### The first set of tests require bedops and bedtools to be in your path.  
-#### To install TEENA, be sure to have the appropriate rights and run :
+### Run tests for animals:  
+### The first set of tests require bedops and bedtools to be in your path.  
+### To install TEENA, be sure to have the appropriate rights and run :
 ------------------------------------------------------------------------------------------------
 ```
 cd TEENA-master
@@ -88,8 +90,8 @@ bash step2_fa.out2repbase.sh
 bash step3_runteena.sh
 ```
 
-#### Run tests for plants:  
-#### The first set of tests require gffread, bedtools and samtools to be in your path.
+### Run tests for plants:  
+### The first set of tests require gffread, bedtools and samtools to be in your path.
 ------------------------------------------------------------------------------------------------  
 ```
 cd TEENA-master
