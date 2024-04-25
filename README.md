@@ -24,10 +24,8 @@
 
 * Python (>3.8): pandas(>2.0.3), numpy(>1.24.4), matplotlib(>3.7.5), Bio(>1.6.2), scipy(1.10.1), openpyxl(>3.1.2), seaborn(>0.13.2) and scipy(>=1.4.1) libraries.
 
-#### **To install TEENA, be sure to have the appropriate rights and run.**  
-
 ----------------------------------------------------------------
-#### If you have any issues with installation, please refer to the installation guide on their official website:  
+#### If you have any issues for installing these dependencies, please refer to their official websites:  
 
 bedtools: `https://bedtools.readthedocs.io/en/latest/content/installation.html`  
 
@@ -62,7 +60,7 @@ python teena.py [options]
   
   -ch	The chromosome length file we have already downloaded from UCSC(required=True).  
   
-  -m	We believe that the midpoint of the query file is on the interval of the corresponding annotation file, that is, two intervals overlap; If your query file is certain broad-peak file (histone modified like H3K9me3, H3K27me3 etc.), then we consider the intersection of the comment file interval and the corresponding interval of the query file as overlap(required=False, default='True').  
+  -m	We believe that the midpoint of the query file is on the interval of the corresponding annotation file, that is, two intervals overlap; If your query file is certain broad-peak file (histone modified like H3K9me3, H3K27me3 etc.), then we consider the intersection of the comment file interval and the corresponding interval of the query file as overlap (required=False, default='True').  
   
   -n	The bed file of gap from genome sequence which we have preprocessed(required=False, default=None).  
   
@@ -84,11 +82,7 @@ python ./teena.py -q GATA3_hg38.bed -d hg38.repbase.bed -ch hg38.chrom.sizes -fa
  
 cd TEENA-master
 
-chmod +x *
-
 cd ./test/animals/
-
-chmod +x *
 
 bash step1_datadownload.sh
 
@@ -104,11 +98,7 @@ bash step3_runteena.sh
 
 cd TEENA-master
 
-chmod +x *
-
 cd ./test/plants/
-
-chmod +x *
 
 bash step1_datadownload.sh
 
@@ -123,7 +113,7 @@ bash step4_gff2gtf.sh
 bash step5_runteena.sh
 ```
 
-# Citing  
+# Citation  
 Please cite this paper when using TEENA for your publications:  
 
 *Yuzhuo Li, Renzhe Lyu, Shuai Chen, Yejun Wang, Ming-an Sun. TEENA: an integrated web server for transposable element enrichment analysis in various model and non-model organisms. 2024, Submitted.*  
