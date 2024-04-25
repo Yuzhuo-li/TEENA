@@ -1,4 +1,5 @@
 #!/bin/bash
+# Renzhe Lyu, 2024/4/22
 # This is a script to process TE annotation file of plants
 # If there are two strings separated by "/" in the fourth column, but do not have ":", add ":NA"
 
