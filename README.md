@@ -1,16 +1,16 @@
 # TEENA  
-**This is the code development repository of TEENA web sever.**
+**This is the code development repository of the TEENA web sever.**
 
 ![Static Badge](https://img.shields.io/badge/build-passing-brightgreen)  ![Static Badge](https://img.shields.io/badge/Python-3.8%2B-cornflowerblue)  <a href="https://sun-lab.yzu.edu.cn/TEENA/"> <img src="https://img.shields.io/badge/TEENA-@websever-sandybrown.svg" alt="TEENA"> </a>  
 
-**For detailed instruction about TEENA please visit: `https://sun-lab.yzu.edu.cn/TEENA/help/`**  
+**For detailed instruction about TEENA, please visit: `https://sun-lab.yzu.edu.cn/TEENA/help/`**  
 
 **For any question about TEENA, please contact `DX120230210@stu.yzu.edu.cn`**
 
 ----------------------------------------------------------------
 # Building TEENA  
 
-#### TEENA can run in various Linux, here we showed all the required dependencies from CentOS.  
+#### TEENA can run under various Linux Operating System. Here we showed all the required dependencies as tested with the CentOS Linux.  
 
 #### The TEENA pipeline requires the following dependencies to be in your path:  
 
